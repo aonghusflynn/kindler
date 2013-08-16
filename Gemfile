@@ -32,7 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'fb_graph'
+gem 'omniauth'
+
+gem 'rest-graph'
+
+gem 'mini_fb'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
