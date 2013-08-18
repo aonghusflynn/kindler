@@ -38,6 +38,8 @@ gem 'rest-graph'
 
 gem 'mini_fb'
 
+gem 'zurb-foundation', '~> 2.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
