@@ -19,7 +19,7 @@
 	<%= stylesheet_link_tag    "application" %>
 	
 	<!-- Included JS Files  -->
-	<%= javascript_include_tag "application", controller_name %>
+	
   
   <%= csrf_meta_tags %>
 </head>
@@ -103,5 +103,6 @@
   <div class="container">
     <%= yield %>
   </div>
+  <%= javascript_include_tag "application", controller_name %>
 </body>
 </html>
