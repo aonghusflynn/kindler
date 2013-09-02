@@ -32,13 +32,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'omniauth'
+gem 'omniauth-facebook'
 
 gem 'rest-graph'
 
 gem 'mini_fb'
 
 gem 'zurb-foundation', '~> 4.0.0'
+
+gem 'koala'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
