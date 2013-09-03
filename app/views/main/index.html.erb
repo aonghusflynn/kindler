@@ -1,5 +1,7 @@
-<div ng-controller="IndexCtrl">
-<%= debug(@friends)%>
+
+<% unless session[:user_id].nil? %>
+	<%= link_to 'Create a new Krindle', '/krindles/new'%>
+<% end -%>
 <div class="row">
 	<div class="small-9 columns">
 	  <h1>Share the love this Christmas</h1>
@@ -10,6 +12,3 @@
   	<div class="small-3 columns tree">
   	</div>
 </div>
-
-</div>
-

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130902193015) do
+ActiveRecord::Schema.define(version: 20130903211716) do
 
   create_table "krindles", force: true do |t|
     t.datetime "created_at"

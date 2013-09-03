@@ -1,0 +1,17 @@
+<%= form_for(@krindle) do |f| %>
+  <% if @krindle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@krindle.errors.count, "error") %> prohibited this krindle from being saved:</h2>
+
+      <ul>
+      <% @krindle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

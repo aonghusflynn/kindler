@@ -1,0 +1,25 @@
+<h1>Listing krindles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @krindles.each do |krindle| %>
+      <tr>
+        <td><%= link_to 'Show', krindle %></td>
+        <td><%= link_to 'Edit', edit_krindle_path(krindle) %></td>
+        <td><%= link_to 'Destroy', krindle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Krindle', new_krindle_path %>
