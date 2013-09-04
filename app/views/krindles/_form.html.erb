@@ -11,6 +11,15 @@
     </div>
   <% end %>
 
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name, :size=>40 %>
+
+  <%= f.label :message, "Message" %>
+  <%= f.text_area :message, :size=>40 %>
+  
+  <%= f.label :max_amount, "Maximum amount to spend on a gift" %>
+  <%= f.text_field :max_amount, :size=>40 %>
+
   <div class="actions">
     <%= f.submit %>
   </div>

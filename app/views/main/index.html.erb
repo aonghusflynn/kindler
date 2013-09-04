@@ -1,14 +1,7 @@
-
+<h1>Share the love this Christmas</h1>
+<blockquote>Christmas is coming, and the geese are getting fat, <br/>
+	whose name will you pull from the Kris Krindle hat?</blockquote>
 <% unless session[:user_id].nil? %>
-	<%= link_to 'Create a new Krindle', '/krindles/new'%>
+		<%= link_to 'Create a new Krindle', '/krindles/new'%>
 <% end -%>
-<div class="row">
-	<div class="small-9 columns">
-	  <h1>Share the love this Christmas</h1>
-	  <p>Christmas is coming, and the geese are getting fat, <br/>
-	  	whose name will you pull from the Kris Krindle hat?</p>
-	  <p><fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button></p>
-  	</div>
-  	<div class="small-3 columns tree">
-  	</div>
-</div>
+

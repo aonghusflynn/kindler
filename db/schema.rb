@@ -11,21 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130903211716) do
+ActiveRecord::Schema.define(version: 20130904200839) do
 
   create_table "krindles", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.text     "message"
+    t.decimal  "max_amount"
   end
 
-  create_table "users", force: true do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "name"
-    t.string   "oauth_token"
-    t.datetime "oauth_expires_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "users" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
 end

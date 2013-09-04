@@ -14,6 +14,12 @@ class KrindlesController < ApplicationController
 
   # GET /krindles/new
   def new
+
+    if session[:user_id]
+      @user = User.find(session[:user_id])
+      @graph = Koala::Facebook::API.new(@user.oauth_token)
+      @friends = @graph.get_connections("me", "friends")
+    end
     @krindle = Krindle.new
   end
 
@@ -36,6 +42,8 @@ class KrindlesController < ApplicationController
       end
     end
   end
+
+
 
   # PATCH/PUT /krindles/1
   # PATCH/PUT /krindles/1.json
@@ -69,6 +77,6 @@ class KrindlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def krindle_params
-      params[:krindle]
+      params.require(:krindle).permit(:name, :message)
     end
 end

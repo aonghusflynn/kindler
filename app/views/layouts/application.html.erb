@@ -34,8 +34,13 @@
 </div>
 
   <div class="container">
-    <%= yield %>
-
+  	<div class="row">
+		<div class="small-7 columns">
+    		<%= yield %>
+  		</div>
+  		<div class="small-5 columns tree">
+  		</div>
+	</div>
   </div>
   <%= javascript_include_tag "application", controller_name %>
 </body>
