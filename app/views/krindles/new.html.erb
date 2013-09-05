@@ -1,5 +1,9 @@
 <h1>New krindle</h1>
 
 <%= render 'form' %>
-
+<ul>
+<% for person in @people_list %>
+	<li><img src="<%= person['photo'] %>"/></li>
+<% end -%>
+</ul>
 <%= link_to 'Back', krindles_path %>

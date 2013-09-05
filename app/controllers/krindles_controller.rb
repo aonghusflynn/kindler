@@ -19,6 +19,19 @@ class KrindlesController < ApplicationController
       @user = User.find(session[:user_id])
       @graph = Koala::Facebook::API.new(@user.oauth_token)
       @friends = @graph.get_connections("me", "friends")
+      @people_list = Array.new
+      for friend in @friends
+        h = Hash.new
+        h["photo"] = @graph.get_object(friend['id']+'?fields=picture')['picture']['data']['url']
+        h["id"] = friend["id"]
+        
+
+
+        @people_list << h
+
+      end
+
+
     end
     @krindle = Krindle.new
   end
