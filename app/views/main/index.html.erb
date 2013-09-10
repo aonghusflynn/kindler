@@ -1,7 +1,11 @@
+<div class="hero">
 <h1>Share the love this Christmas</h1>
-<blockquote>Christmas is coming, and the geese are getting fat, <br/>
-	whose name will you pull from the Kris Krindle hat?</blockquote>
+<p>Christmas is coming, and the geese are getting fat, 
+	whose name will you pull from the Kris Krindle hat?</p>
+
+<p>The Krindler helps you share the joy of Christmas with your friends and family.</p>
 <% unless session[:user_id].nil? %>
-		<%= link_to 'Create a new Krindle', '/krindles/new'%>
+		<%= link_to 'Create a new Krindle', '/krindles/new', {:class=>"button medium round"}%>
 <% end -%>
 
+</div>

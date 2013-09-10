@@ -3,7 +3,7 @@ Kindler::Application.routes.draw do
   
   get "facebook_users/list"
   
-  get "main/index"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -12,6 +12,8 @@ Kindler::Application.routes.draw do
   get 'signout', to: 'sessions#destroy', as: 'signout'
   # You can have the root of your site routed with "root"
    root 'main#index'
+
+   get 'main/kindles'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
