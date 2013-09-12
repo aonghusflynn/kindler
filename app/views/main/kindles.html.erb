@@ -1,0 +1,6 @@
+<% unless  @kindles.empty? -%>
+	<%= debug @kindles %>
+<% else -%>
+	<h3>Hey, you are not in a Kris Kindle, why not set one up?</h3>
+	<%= link_to 'Create a new Krindle', '/krindles/new', {:class=>"button medium round"} %>
+<% end -%>
