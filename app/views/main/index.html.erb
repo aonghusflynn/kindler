@@ -1,11 +1,22 @@
-<div class="hero">
-<h1>Share the love this Christmas</h1>
-<p>Christmas is coming, and the geese are getting fat, 
-	whose name will you pull from the Kris Krindle hat?</p>
-
-<p>The Krindler helps you share the joy of Christmas with your friends and family.</p>
-<% unless session[:user_id].nil? %>
+<div class="row">
+	<h1>Share the love this Christmas with a Kris Kindle</h1>
+	<% unless session[:user_id].nil? %>
 		<%= link_to 'Create a new Krindle', '/krindles/new', {:class=>"button medium round"}%>
-<% end -%>
+	<% end -%>
+</div>
 
+<div class="row">
+	<h3>Is a Kris Kindle the same as a Secret Santa?</h3>
+	
+	<p>Exactly! What <a href="http://www.kris-kindle.com">kris-kindle.com</a> does, is make it easier to do a Secret Santa. If your family is anything like mine, getting everyone in the one place to pull names out of a hat can be really hard.</p>
+	
+	<p>Once you decide who you want to be in your kris kindle, <a href="http://www.kris-kindle.com">kris-kindle.com</a> will match your friends together, just like pulling names out of a hat.</p>
+
+	<h3>But wait there's more!</h3>
+	
+	<p><a href="http://www.kris-kindle.com">kris-kindle.com</a> will even provide suggestions on what gifts to buy based on their facebook likes! So your family and friends will all get what they want this Christmas.</p>
+
+	<h3>Sounds great! But how much is it?</h3>
+	
+	<p>Unfortunately, a great service like this doesn't come for free. Oh wait it does! That's right, just <%= link_to "login in with Facebook", "/auth/facebook", id: "sign_in" %> account and you are good to go! Think of it as an early Christmas present.</p>
 </div>

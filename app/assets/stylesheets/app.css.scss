@@ -23,3 +23,62 @@ $dark-gray : #c4c4c4;
 .button{
 	color:white;
 }
+
+.padding-left-10{
+	padding-left: 10px;
+}
+
+.padding-right-10{
+	padding-right: 10px;
+} 
+
+.padding-10{
+	padding: 10px;
+}
+
+.padding-left-20{
+	padding-left: 20px;
+}
+
+.padding-right-10{
+	padding-right: 20px;
+} 
+
+.padding-10{
+	padding: 20px;
+}
+
+
+.margin-left-10{
+	margin-left: 10px;
+}
+
+.margin-right-10{
+	margin-right: 10px;
+} 
+
+.margin-10{
+	margin: 10px;
+}
+
+.margin-left-20{
+	margin-left: 20px;
+}
+
+.margin-right-20{
+	margin-right: 20px;
+} 
+
+.margin-20{
+	margin: 20px;
+}
+
+a{
+	color: #fff;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+a:hover{
+	text-shadow:none;
+	color:#eee;
+}
