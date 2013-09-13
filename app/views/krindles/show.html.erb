@@ -1,12 +1,14 @@
 <p id="notice"><%= notice %></p>
-
-
-	<% for person in @people_list -%>
-		<div class="friend clearfix panel">
-			<%= image_tag(person['photo'], class: "left") %>
-				<p><%= person['name'] %></p>
+<div>
+	
+	<% for person in @people_list %>
+		<div class="panel person small-6" id="<%= person['id']%>">
+		<%= image_tag(person['picture']['data']['url'], class: "clearfix") %>
+		<p class="margin-left-20 right"><%= person['name']%></p>
 		</div>
-	<% end -%>
+	<% end %>
+
+</div>
 
 
 <%= link_to 'Edit', edit_krindle_path(@krindle) %> |
