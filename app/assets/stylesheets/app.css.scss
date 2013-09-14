@@ -1,17 +1,19 @@
+/*
+
 $light-gray : #a0a0a0;
 $dark-gray : #c4c4c4;
 
 .container{
 	width: 100%;
 	min-height: 960px;
-	background: $dark-gray; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  $dark-gray 0%, $light-gray 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$dark-gray), color-stop(100%,$light-gray)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  $dark-gray 0%,$light-gray 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  $dark-gray 0%,$light-gray 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  $dark-gray 0%,$light-gray 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  $dark-gray 0%,$light-gray 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$dark-gray', endColorstr='$light-gray',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: $dark-gray;
+	background: -moz-radial-gradient(center, ellipse cover,  $dark-gray 0%, $light-gray 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$dark-gray), color-stop(100%,$light-gray));
+	background: -webkit-radial-gradient(center, ellipse cover,  $dark-gray 0%,$light-gray 100%); 
+	background: -o-radial-gradient(center, ellipse cover,  $dark-gray 0%,$light-gray 100%); 
+	background: -ms-radial-gradient(center, ellipse cover,  $dark-gray 0%,$light-gray 100%);
+	background: radial-gradient(ellipse at center,  $dark-gray 0%,$light-gray 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$dark-gray', endColorstr='$light-gray',GradientType=1 );
 }
 
 .tree {
@@ -82,3 +84,4 @@ a:hover{
 	text-shadow:none;
 	color:#eee;
 }
+*/

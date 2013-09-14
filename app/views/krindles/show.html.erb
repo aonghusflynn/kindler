@@ -1,15 +1,23 @@
+<div ng-app="friendsApp">
+
 <p id="notice"><%= notice %></p>
-<div>
-	
-	<% for person in @people_list %>
+<div ng-controller="MainCtrl" class="small-7">
+	<div ng-repeat="friend in friends">
+		
+		<div class="panel" ng-click=""><img src="{{friend.picture.data.url}}"/><p class="right">{{friend}}</p></div>
+	</div>
+
+	<!--
+	<%  for person in @people_list %>
 		<div class="panel person small-6" id="<%= person['id']%>">
 		<%= image_tag(person['picture']['data']['url'], class: "clearfix") %>
 		<p class="margin-left-20 right"><%= person['name']%></p>
 		</div>
 	<% end %>
-
+	-->
 </div>
 
 
 <%= link_to 'Edit', edit_krindle_path(@krindle) %> |
 <%= link_to 'Back', krindles_path %>
+</div>

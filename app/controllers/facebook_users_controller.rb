@@ -8,18 +8,16 @@ class FacebookUsersController < ApplicationController
 	      @graph = Koala::Facebook::API.new(@user.oauth_token)
 	      @friends = @graph.get_connections("me", "friends")
 	      @people_list = Array.new
-      		#for friend in @friends
-	        	h = Hash.new
-	        	h = @graph.get_object('me?fields=id,name,friends.fields(id,email,name,picture)')
-
-	        	#h["photo"] = @graph.get_object(friend['id']+'?fields=picture,name')['picture']['data']['url']
-	        	#h["id"] = friend["id"]
-	        	#h["name"] = @graph.get_object(friend['id']+'?fields=name')["name"]
-	        	#h["likes"] = @graph.get_object(friend['id']+'?fields=likes')["data"]
-	        	@people_list << h
-	    	#end
+	      @friends_list = Array.new
+          @people_list = @graph.get_object('me?fields=id,name,friends.fields(id,email,name,picture)')['friends']['data']
+          @people_list.each do |person|
+          	h= Hash.new
+          	h[person['id']]=person
+          	@friends_list << h
+          end
+	    	
 	 	end
-	 	render :json=>@people_list
+	 	render :json=>@friends_list
   	end
 
 
