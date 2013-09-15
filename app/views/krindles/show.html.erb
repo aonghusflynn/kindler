@@ -1,20 +1,29 @@
 <div ng-app="friendsApp">
 
 <p id="notice"><%= notice %></p>
-<div ng-controller="MainCtrl" class="small-7">
-	<div ng-repeat="friend in friends">
-		
-		<div class="panel" ng-click=""><img src="{{friend.picture.data.url}}"/><p class="right">{{friend}}</p></div>
-	</div>
 
-	<!--
-	<%  for person in @people_list %>
-		<div class="panel person small-6" id="<%= person['id']%>">
-		<%= image_tag(person['picture']['data']['url'], class: "clearfix") %>
-		<p class="margin-left-20 right"><%= person['name']%></p>
+<input ng-model="query" placeholder="Add someone"  />
+
+<div ng-controller="MainCtrl" class="row">
+	<div class="small-4 columns">
+		<div ng-repeat="friend in friends | filter:query">
+			<div class="panel">
+				<img src="{{friend.picture.data.url}}"/>
+				<p class="right clearfix">{{friend.name}}</p>
+				<p class="right"><a href="" ng-click="addToKindle(friend)">Add</a></p>
+			</div>
 		</div>
-	<% end %>
-	-->
+	</div>
+	<div class="small-4 columns">
+		<div ng-repeat="friend in friendsInKindle">
+			<div class="panel">
+				<img src="{{friend.picture.data.url}}"/>
+				<p class="right">{{friend.name}}</p>
+				<p class="right"><a href="" ng-click="removeFromKindle(friend)">Remove</a></p>
+			</div>
+		</div>
+	</div>
+	
 </div>
 
 
