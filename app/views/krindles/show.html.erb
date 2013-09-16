@@ -6,11 +6,11 @@
 
 <div ng-controller="MainCtrl" class="row">
 	<div class="small-4 columns">
-		<div ng-repeat="friend in friends | filter:query">
+		<div ng-repeat="friend in friends | filter:query | orderBy:name">
 			<div class="panel">
 				<img src="{{friend.picture.data.url}}"/>
 				<p class="right clearfix">{{friend.name}}</p>
-				<p class="right"><a href="" ng-click="addToKindle(friend)">Add</a></p>
+				<p><a href="" ng-click="addToKindle(friend)" class="button success small">Add</a></p>
 			</div>
 		</div>
 	</div>
@@ -19,7 +19,7 @@
 			<div class="panel">
 				<img src="{{friend.picture.data.url}}"/>
 				<p class="right">{{friend.name}}</p>
-				<p class="right"><a href="" ng-click="removeFromKindle(friend)">Remove</a></p>
+				<p><a href="" ng-click="removeFromKindle(friend)" class="button alert small">Remove</a></p>
 			</div>
 		</div>
 	</div>
