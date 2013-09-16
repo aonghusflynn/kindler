@@ -8,5 +8,6 @@ class MainController < ApplicationController
   end
   def kindles
   	@kindles = User.find(session[:user_id]).krindles
+  	
   end
 end

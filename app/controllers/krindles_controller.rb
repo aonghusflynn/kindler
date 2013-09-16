@@ -12,13 +12,6 @@ class KrindlesController < ApplicationController
   def show
      @user = User.find(session[:user_id])
      @graph = Koala::Facebook::API.new(@user.oauth_token)
-      #  @friends = @graph.get_connections("me", "friends")
-        @people_list = Array.new
-          #for friend in @friends
-            h = Hash.new
-            @people_list = @graph.get_object('me?fields=id,name,friends.fields(id,email,name,picture)')['friends']['data']
-            #@people_list << h
-   #     end
   end
 
   # GET /krindles/new
@@ -34,7 +27,8 @@ class KrindlesController < ApplicationController
   # POST /krindles.json
   def create
     @krindle = Krindle.new(krindle_params)
-
+    @user = User.find(session[:user_id])
+    @krindle.users<<@user
     respond_to do |format|
       if @krindle.save
         format.html { redirect_to @krindle, notice: 'Krindle was successfully created.' }
