@@ -15,6 +15,10 @@ Kindler::Application.routes.draw do
 
    get 'main/kindles'
 
+   get 'krindle/:krindle_id' => 'main#krindle'
+
+   post 'krindle/:krindle_id/:users' => 'main#krindle'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
