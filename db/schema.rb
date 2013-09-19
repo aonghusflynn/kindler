@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130916185530) do
+ActiveRecord::Schema.define(version: 20130919192607) do
 
   create_table "krindlers", force: true do |t|
     t.integer  "krindle_id"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20130916185530) do
     t.datetime "last_login"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "selected"
   end
 
   create_table "krindles", force: true do |t|

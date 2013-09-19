@@ -1,0 +1,252 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lin",
+				"link_to"
+			],
+			[
+				"krin",
+				"krindlers"
+			],
+			[
+				"Kri",
+				"Krindle"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"height",
+				"min-height"
+			],
+			[
+				"about",
+				"aboutSet"
+			],
+			[
+				"ab",
+				"aboutSet"
+			],
+			[
+				"c",
+				"contentSet"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"ma",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"sass",
+				"Set Syntax: CSS"
+			],
+			[
+				"",
+				"Preferences: Settings - User"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/aonghusflynn/Documents/rails/kindler/app/views/krindles/show.html.erb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/javascripts/controllers/main/mainCtrl.js",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/main_controller.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/krindles_controller.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/models/user.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/views/main/kindles.html.erb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/facebook_users_controller.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/models/krindler.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/models/krindle.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/db/migrate/20130916185530_create_krindlers.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/db/migrate/20130916185258_add_isusing_column_to_users_kringles.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/views/layouts/application.html.erb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/javascripts/app.js",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/javascripts/application.js",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/javascripts/services/main/services.js",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/javascripts/controllers/main/mainIndexCtrl.js.coffee",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/javascripts/main.js.coffee",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/stylesheets/app.css.scss",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/stylesheets/main.css.scss",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/stylesheets/application.css",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/views/main/index.html.erb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/sessions_controller.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/Gemfile",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/application_controller.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/config/routes.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/javascripts/facebook.js.coffee.erb",
+		"/Users/aonghusflynn/Documents/rails/kindler/config/initializers/omniauth.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/config/environments/production.rb",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/views/where-view.js",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/views/sport-view.js",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/views/history-view.js",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/views/arts-view.js",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/views/manor-view.js",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/styles/main.scss",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/routes/application-router.js",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/templates/manor.ejs",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/main.js",
+		"/Users/aonghusflynn/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/scripts/models/content-model.js",
+		"/Users/aonghusflynn/Documents/html/cluainin/app/styles/main.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#a0a0a0",
+			"#c4c4c4"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$light-gray",
+			"$dark-gray"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"rout",
+				"config/routes.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true
+}

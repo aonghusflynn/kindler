@@ -4,7 +4,7 @@
 
 <input ng-model="query" placeholder="Add someone"  />
 
-<div ng-controller="MainCtrl" class="row">
+<div ng-controller="MainCtrl" ng-init="init('<%= @krindle.id %>')" class="row">
 	<div class="small-4 columns">
 		<div ng-repeat="friend in friends | filter:query | orderBy:name">
 			<div class="panel">
@@ -15,6 +15,7 @@
 		</div>
 	</div>
 	<div class="small-4 columns">
+
 		<div ng-repeat="friend in friendsInKindle">
 			<div class="panel">
 				<img src="{{friend.picture.data.url}}"/>
