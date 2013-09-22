@@ -14,12 +14,16 @@ function MainCtrl($scope, Friend, Krindles){
 		$scope.friends.push(friend);
 	};
 
-	$scope.saveToKindle = function(){
-		Friend.save();
+	$scope.saveToKindle = function(id){
+		this.krindle = Krindles.get({krindle_id:id});
+		this.krindle.krindle_id = id;
+		this.krindle.krindle = $scope.friendsInKindle;
+		this.krindle.$save();
 	};
 
 	$scope.init = function(id){
-		console.log('Users in krindle'+Krindles.get({krindle_id:id}));
+		Krindles.query({krindle_id:id});
+		
 	};
 
 

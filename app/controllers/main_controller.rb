@@ -25,4 +25,10 @@ class MainController < ApplicationController
     end
 
   end
+
+  def krindle_save
+    @krindle={}
+    render :json=>@krindle
+  end
+
 end

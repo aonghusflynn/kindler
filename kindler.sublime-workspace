@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"kr",
+				"krindle"
+			],
+			[
+				"krindle",
+				"krindle_id"
+			],
+			[
 				"lin",
 				"link_to"
 			],
@@ -71,6 +79,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/assets/javascripts/services/main/services.js",
+			"settings":
+			{
+				"buffer_size": 282,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/controllers/main/mainCtrl.js",
+			"settings":
+			{
+				"buffer_size": 735,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/krindles/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 1086,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1767,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/main_controller.rb",
+			"settings":
+			{
+				"buffer_size": 636,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -104,13 +152,14 @@
 	},
 	"file_history":
 	[
+		"/Users/aonghusflynn/Documents/rails/kindler/db/migrate/20130919192607_add_selected_column.rb",
+		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/facebook_users_controller.rb",
 		"/Users/aonghusflynn/Documents/rails/kindler/app/views/krindles/show.html.erb",
 		"/Users/aonghusflynn/Documents/rails/kindler/app/assets/javascripts/controllers/main/mainCtrl.js",
 		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/main_controller.rb",
 		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/krindles_controller.rb",
 		"/Users/aonghusflynn/Documents/rails/kindler/app/models/user.rb",
 		"/Users/aonghusflynn/Documents/rails/kindler/app/views/main/kindles.html.erb",
-		"/Users/aonghusflynn/Documents/rails/kindler/app/controllers/facebook_users_controller.rb",
 		"/Users/aonghusflynn/Documents/rails/kindler/app/models/krindler.rb",
 		"/Users/aonghusflynn/Documents/rails/kindler/app/models/krindle.rb",
 		"/Users/aonghusflynn/Documents/rails/kindler/db/migrate/20130916185530_create_krindlers.rb",
@@ -182,8 +231,145 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/assets/javascripts/services/main/services.js",
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								201
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/assets/javascripts/controllers/main/mainCtrl.js",
+					"settings":
+					{
+						"buffer_size": 735,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								648,
+								648
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/krindles/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 1086,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								921,
+								921
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								596,
+								596
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 97.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/main_controller.rb",
+					"settings":
+					{
+						"buffer_size": 636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								581,
+								581
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
