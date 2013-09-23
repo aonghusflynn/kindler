@@ -18,19 +18,9 @@ class FacebookUsersController < ApplicationController
   	end
 
   def krindle
-    if request.post?
-     @krindle =  Krindle.find(params[:krindle_id])
-     @krindle.users = params[:users]
-     @krindle.save
-    else
-      if params[:krindle_id].nil?
-        render :json=>[]
-      else
-        @people_list = Krindle.find(params[:krindle_id]).users
-        render :json=>@people_list
-      end
-    end
-
+    @people_list=[]
+    @people_list = Krindle.find(params['krindle_id']).users
+    render :json=>@people_list
   end
 
   def krindle_save

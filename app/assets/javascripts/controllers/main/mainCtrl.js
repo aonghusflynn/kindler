@@ -15,14 +15,20 @@ function MainCtrl($scope, Friend, Krindles){
 	};
 
 	$scope.saveToKindle = function(id){
-		this.krindle = Krindles.get({krindle_id:id});
+		this.krindle = Krindles.query({krindle_id:id});
 		this.krindle.krindle_id = id;
 		this.krindle.krindle = $scope.friendsInKindle;
 		this.krindle.$save();
 	};
 
 	$scope.init = function(id){
-		Krindles.query({krindle_id:id});
+		console.log(id);
+		var kindle = Krindles.query({krindle_id:id}, function(){
+			console.log(kindle);
+			$scope.friendsInKindle=kindle;
+		});
+
+//		$scope.friendsInKindle=kindle;
 		
 	};
 
