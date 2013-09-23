@@ -37,7 +37,7 @@ class FacebookUsersController < ApplicationController
     @krindle=Krindle.find(params['krindle_id'])
     added_users = params['krindle']
     added_users.each do |user|
-    	@krindle.users<<User.create(user)
+    	@krindle.users<<User.find_or_create_by_id(:name=>user['name'], :id=>user['id'], :picture=>user['picture']['data']['url'])
     end
     @krindle.save
     render :json=>@krindle
