@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130923145229) do
+ActiveRecord::Schema.define(version: 20130924204511) do
+
+  create_table "krindle_picks", force: true do |t|
+    t.integer  "krindle_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "krindlers", force: true do |t|
     t.integer  "krindle_id"
