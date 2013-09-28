@@ -1,8 +1,28 @@
 // Place all the styles related to the Main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-/*
-.top-bar{
-	color: white;
+.sub-nav dd{
+	font-size: 1.5em;
 }
-*/
+
+.container{
+	width:100%;
+	background: url('/images/tree.jpg') transparent 0 0 no-repeat;
+	background-size: cover;
+	padding: 4em 0;
+}
+
+.app{
+	padding: 40px;
+	border: 1px solid rgba(133, 133, 133, 0.4);
+	background-color: rgba(12, 116, 12, 0.58);
+	width: 80%;
+	height: 80%;
+	box-shadow: 3px 3px 5px rgba(27, 27, 27, 0.44);
+	margin:auto;
+	color:white
+}
+
+.app h1, .app h2, .app h3{
+	color:white;
+}

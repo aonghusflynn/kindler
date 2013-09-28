@@ -1,11 +1,22 @@
 <div class="row">
-	<h1>Share the love this Christmas with a Kris Kindle</h1>
+	
+	<h1>Kris Kindle</h1>
 	<% unless session[:user_id].nil? %>
 		<%= link_to 'Create a new Krindle', '/krindles/new', {:class=>"button medium round"}%>
 	<% end -%>
+
 </div>
 
 <div class="row">
+	
+	<div class="columns small-4">			<% if current_user %>
+    			Signed in as <strong><%= current_user.name %></strong>!
+	    		<%= link_to "Sign out", signout_path, id: "sign_out" %>
+  			<% else %>
+    			<%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in", class: "button round right margin-right-10" %>
+  			<% end %>
+  		</div>
+  		<div class="columns small-8">
 	<h3>Is a Kris Kindle the same as a Secret Santa?</h3>
 	
 	<p>Exactly! What <a href="http://www.kris-kindle.com">kris-kindle.com</a> does, is make it easier to do a Secret Santa. If your family is anything like mine, getting everyone in the one place to pull names out of a hat can be really hard.</p>
@@ -19,4 +30,5 @@
 	<h3>Sounds great! But how much is it?</h3>
 	
 	<p>Unfortunately, a great service like this doesn't come for free. Oh wait it does! That's right, just <%= link_to "login in with Facebook", "/auth/facebook", id: "sign_in" %> account and you are good to go! Think of it as an early Christmas present.</p>
+	</div>
 </div>

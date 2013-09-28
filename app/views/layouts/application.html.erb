@@ -24,22 +24,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="user_nav" class="top-bar">
-  <% if current_user %>
-    Signed in as <strong><%= current_user.name %></strong>!
-    <%= link_to "Sign out", signout_path, id: "sign_out" %>
-  <% else %>
-    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in", class: "button round right margin-right-10" %>
-  <% end %>
-</div>
+
+
 
   <div class="container">
-  	<div class="row">
-		<div class="small-12 columns">
-    		<%= yield %>
-  		</div>
-  		
-	</div>
+  	<div class="row app">
+		<%= yield %>
+  	</div>
   </div>
   <%= javascript_include_tag "application", controller_name %>
 </body>
