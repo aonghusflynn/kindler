@@ -42,5 +42,36 @@ body{
 
 .krindle h3{
 	color:#000;
+}
 
+.friend img{
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px #333;
+	float: left;
+	margin:10px;
+}
+
+.friend strong{
+	color:#f00;
+}
+
+.friend{
+	min-height: 5em;
+}
+
+.friend strong{
+	margin-top: 1.2em;
+}
+
+.friend a.button{
+	margin-top: 1em;	
+}
+
+.friend{
+	padding:1em;
+}
+
+.friends-list{
+	max-height:50em;
+	overflow: scroll;
 }
