@@ -1,7 +1,7 @@
 <div class="row">
 	<% unless @kindles.empty? -%>
 		<% for kindle in @kindles %>
-			<div class="panel">
+			<div class="panel krindle">
 				<h3><%= kindle.name %></h3>
 				<p>
 					<%= link_to "Go to the Kris Kindle", url_for(kindle), class:"button small" %>
