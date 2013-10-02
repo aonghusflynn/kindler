@@ -3,7 +3,7 @@
 <!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" itemscope itemtype="http://schema.org/WebApplication" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
 	
@@ -12,15 +12,26 @@
 	
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta name="description" content="Kris Kindle allows you to play Secret Santa with your family and friends. Share the joy of giving!" />
+
+	<meta itemprop="description" content="Kris Kindle allows you to play Secret Santa with your family and friends. Share the joy of giving!">
+
+	<meta property="og:title" content="Kris Kindle" />
+	<meta property="og:type" content="website" />
+	<!--<meta property="og:url" content="http://www.kris-kindle.com/" />-->
+	<!-- <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" /> -->
+	<meta property="fb:app_id" content="289497607855017"/>
+	<link rel="publisher" href="https://plus.google.com/111618093467441835278">
+
+	<!--
+  		<link rel="apple-touch-icon" href="http://1-ps.googleusercontent.com/x/s.html5rocks-hrd.appspot.com/www.html5rocks.com/static/images/identity/HTML5_Badge_64.png.pagespeed.ce.S0LMUsq9YG.png">
+    	<link rel="apple-touch-icon-precomposed" href="http://1-ps.googleusercontent.com/x/s.html5rocks-hrd.appspot.com/www.html5rocks.com/static/images/identity/HTML5_Badge_64.png.pagespeed.ce.S0LMUsq9YG.png">
+	-->
 	
-	<title><%= content_for?(:title) ? yield(:title) : "Kindler" %></title>
-  
+	<title><%= content_for?(:title) ? yield(:title) : "Kris Kindle" %></title>
 	<!-- Included CSS Files -->
 	<%= stylesheet_link_tag    "application" %>
-	
-	<!-- Included JS Files  -->
-	
-  
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -28,9 +39,11 @@
 
 
   <div class="container">
-  	<div class="row app">
-		<%= yield %>
-  	</div>
+  	<section>
+  		<div class="row app">
+			<%= yield %>
+  		</div>
+  	</section>
   </div>
   <%= javascript_include_tag "application", controller_name %>
 </body>

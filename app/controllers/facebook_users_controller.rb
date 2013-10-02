@@ -31,7 +31,7 @@ class FacebookUsersController < ApplicationController
     added_users.each do |user|
 
       
-    	@krindle.users<<User.find_or_create_by_id(:name=>user['name'], :id=>user['id'], :picture=>user['picture'])
+    	@krindle.users<<User.find_or_create_by_id(:name=>user['name'], :uid=>user['id'], :picture=>user['picture'])
     end
     test = @krindle.save
     puts "test= "+test.to_s
